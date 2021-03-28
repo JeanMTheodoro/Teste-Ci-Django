@@ -4,9 +4,9 @@ on: [pull_request]
 
 jobs:
   build:
-    env:
+    """env:
       PIPENV_NO_INHERIT: 1
-      PIPENV_IGNORE_VIRTUALENVS: 1
+      PIPENV_IGNORE_VIRTUALENVS: 1"""
     runs-on: ubuntu-latest
 
     steps:
