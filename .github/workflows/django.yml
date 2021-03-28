@@ -4,11 +4,7 @@ on: [pull_request]
 
 jobs:
   build:
-    """env:
-      PIPENV_NO_INHERIT: 1
-      PIPENV_IGNORE_VIRTUALENVS: 1"""
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
