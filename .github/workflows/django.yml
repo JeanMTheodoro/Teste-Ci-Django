@@ -22,4 +22,4 @@ jobs:
     - name: Rodar Teste Automaticos
       run: |
         pip install django-pytest
-        pytest webdev
+        pytest webdev/teste_home.py
