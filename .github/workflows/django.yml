@@ -21,5 +21,4 @@ jobs:
         if [ -f requirements-dev.txt]; then pip install -r requirements-dev.txt; fi
     - name: Rodar Teste Automaticos
       run: |
-        pip install django-pytest
-        pytest webdev/teste_home.py
+        pytest --ds=webdev.teste_home
