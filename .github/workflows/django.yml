@@ -4,6 +4,9 @@ on: [pull_request]
 
 jobs:
   build:
+    env:
+      PIPENV_NO_INHERIT: 1
+      PIPENV_IGNORE_VIRTUALENVS: 1
     runs-on: ubuntu-latest
 
     steps:
@@ -18,4 +21,4 @@ jobs:
         if [ -f requirements-dev.txt]; then pip install -r requirements-dev.txt; fi
     - name: Rodar Teste Automaticos
       run: |
-        pytest webdev/teste_home.py 
+        pytest  
