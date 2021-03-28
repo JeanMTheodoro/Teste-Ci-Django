@@ -21,4 +21,5 @@ jobs:
         if [ -f requirements-dev.txt]; then pip install -r requirements-dev.txt; fi
     - name: Rodar Teste Automaticos
       run: |
+        pip install pytest-django
         pytest webdev
